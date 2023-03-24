@@ -19,6 +19,7 @@
 
     <!-- Icon Font Stylesheet -->
     <script src="https://kit.fontawesome.com/bf83df5ba6.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bf83df5ba6.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -70,12 +71,12 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="section-title bg-white text-center text-primary px-3">Contáctanos</p>
+                <p class="section-title bg-white text-center text-primary px-3"><i class="fa-brands fa-whatsapp"></i> Contáctanos <i class="fa-brands fa-whatsapp"></i></p>
                 <h1 class="mb-5">Tienes alguna duda.</h1>
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <form>
+                        <form id="formulario">
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
@@ -85,8 +86,8 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo" required>
-                                    <label for="email">Tu Email</label>
+                                    <input type="text" class="form-control" name="city" id="city" placeholder="Tu ciudad" required>
+                                    <label for="text">Tu Ciudad</label>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -102,7 +103,8 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-secondary rounded-pill py-3 px-5" type="submit">Enviar mensaje</button>
+                                <button class="btn btn-secondary rounded-pill py-3 px-5" type="submit" id="submit"><i class="fa-brands fa-whatsapp"></i> Enviar mensaje</button>
+                                <button class="btn btn-light rounded-pill py-3 px-5" type="reset" id="submit"><i class="fa-solid fa-trash"></i> Limpiar</button>
                             </div>
                         </div>
                     </form>
@@ -164,8 +166,10 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <h5 class="text-white mb-4">Links</h5>
-                <a class="btn btn-link" href="./index.html">Nosotros</a>
-                <a class="btn btn-link" href="./index.html">Contacto</a>
+                <a class="btn btn-link" href="./index.html">Home</a>
+                <a class="btn btn-link" >Servicios Especiales</a>
+                <a class="btn btn-link" href="./galeria.html">Galeria de Franquicias</a>
+                <a class="btn btn-link" href="./contacto.html">Contáctanos</a>
             </div>
             <div class="col-lg-4 col-md-6">
                 <h5 class="text-white mb-4">Horarios</h5>
@@ -213,6 +217,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/parallax/parallax.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="./js/whatsapp.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
