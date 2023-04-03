@@ -76,38 +76,39 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <form id="formulario">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" name="nombre" id="name" placeholder="Tu nombre" required>
-                                    <label for="name">Tu nombre</label>
-                                </div>
+                    <form class="rd-mailform rd-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                        <div class="row row-x-16 row-20">
+                          <div class="col-md-6">
+                            <div class="form-wrap">
+                              <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                              <label class="form-label" for="contact-name">Your Name</label>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" name="city" id="city" placeholder="Tu ciudad" required>
-                                    <label for="text">Tu Ciudad</label>
-                                </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-wrap">
+                              <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Required @Email">
+                              <label class="form-label" for="contact-email">Email</label>
                             </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto">
-                                    <label for="subject">Asunto</label>
-                                </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-wrap">
+                              <label class="form-label" for="contact-message">Message</label>
+                              <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
                             </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 250px"></textarea>
-                                    <label for="message">Tu mensaje</label>
-                                </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-wrap">
+                              <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@PhoneNumber">
+                              <label class="form-label" for="contact-phone">Phone</label>
                             </div>
-                            <div class="col-12">
-                                <button class="btn btn-secondary rounded-pill py-3 px-5" type="submit" id="submit"><i class="fa-brands fa-whatsapp"></i> Enviar mensaje</button>
-                                <button class="btn btn-light rounded-pill py-3 px-5" type="reset" id="submit"><i class="fa-solid fa-trash"></i> Limpiar</button>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-wrap form-button">
+                              <button class="button button-block button-primary" type="submit">Send Message</button>
                             </div>
+                          </div>
                         </div>
-                    </form>
+                      </form>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <h3 class="mb-4">Contacto</h3>
